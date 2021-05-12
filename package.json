@@ -1,17 +1,14 @@
 {
 	"dependencies": {
-		"axios": "^0.21.1",
 		"discord-rpc": "github:discordjs/discord-rpc",
-		"tcp-port-used": "^1.0.2"
 	},
 	"devDependencies": {
 		"@types/discord-rpc": "^3.0.5",
 		"@types/node": "^14.14.41",
-		"@types/tcp-port-used": "^1.0.0"
 	},
-	"name": "last.fm",
+	"name": "papugoland-rpc",
 	"version": "1.0.0",
-	"description": "A last.fm rich presence",
+	"description": "Rich presence for papugoland.me",
 	"main": "index.ts",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1"
