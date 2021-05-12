@@ -6,7 +6,7 @@ export default class RPCHandler {
     this.ready = false;
     const connect = () => {
       this.rpc = new Client({ transport: 'ipc' });
-      this.rpc.login({ clientId: '789532463465889873' }).catch(() => {
+      this.rpc.login({ clientId: '587295793627529246' }).catch(() => {
         console.log('Could not connect, retrying in 5 seconds');
         setTimeout(connect, 5000);
       });
@@ -27,12 +27,12 @@ export default class RPCHandler {
     }
     const object = {
       details: data.players.online + '/' + data.players.max + ' graczy',
-      state: 'papugoland.me',
-      largeImageKey: 'papuga',
+      state: 'kaczkoland.pl',
+      largeImageKey: 'kaczka',
       largeImageText: data.version,
       buttons: [
-        { label: 'Serwer Discord', url: 'https://discord.gg/VArQNt9PvC' },
-        { label: 'Strona internetowa', url: 'https://papugoland.me/' },
+        { label: 'Serwer Discord', url: 'https://discord.com/invite/MfH5qN4' },
+        { label: 'Strona internetowa', url: 'https://kaczkoland.pl' },
       ],
     };
 
