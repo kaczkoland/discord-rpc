@@ -12,7 +12,8 @@
 	"description": "Rich presence for kaczkoland.pl (original by Xiboon)",
 	"main": "index.ts",
 	"scripts": {
-		"build": "tsc --build"
+		"build": "tsc --build",
+		"start": "cd dist && node index.js"
 	},
 	"author": "Xiboon",
 	"license": "GPL-3.0"
