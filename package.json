@@ -1,7 +1,7 @@
 {
 	"dependencies": {
 		"discord-rpc": "github:discordjs/discord-rpc",
-		"axios: "^0.21.1"
+		"axios": "^0.21.1"
 	},
 	"devDependencies": {
 		"@types/discord-rpc": "^3.0.5",
