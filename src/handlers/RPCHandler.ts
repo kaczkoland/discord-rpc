@@ -22,26 +22,25 @@ export default class RPCHandler {
     connect();
   }
   parseToRP(data: any) {
-    if (!data.players) {
+    if (!data.onlinePlayers && !data.maxPlayers) {
       return;
     }
     const object = {
-      details: data.players.online + '/' + data.players.max + ' graczy',
+      details: data.onlinePlayers + '/' + data.maxPlayers + ' graczy',
       state: 'kaczkoland.pl',
       largeImageKey: 'logo',
-      largeImageText: data.version,
+      largeImageText: "Wersja 1.16.4+",
       buttons: [
         { label: 'Serwer Discord', url: 'https://discord.com/invite/MfH5qN4' },
         { label: 'Strona internetowa', url: 'https://kaczkoland.pl' },
       ],
     };
-
-    if (data?.duration === '0' || !data) {
-      return object;
-    } else {
-      // @ts-ignore
-      object.endTimestamp = Date.now() + parseInt(data?.duration);
-    }
+    // if (data?.duration === '0' || !data) {
+    //   return object;
+    // } else {
+    //   // @ts-ignore
+    //   object.endTimestamp = Date.now() + parseInt(data?.duration);
+    // }
     return object;
   }
   setRP(
