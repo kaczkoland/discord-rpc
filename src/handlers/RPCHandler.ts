@@ -28,7 +28,7 @@ export default class RPCHandler {
     const object = {
       details: data.players.online + '/' + data.players.max + ' graczy',
       state: 'kaczkoland.pl',
-      largeImageKey: 'kaczka',
+      largeImageKey: 'logo',
       largeImageText: data.version,
       buttons: [
         { label: 'Serwer Discord', url: 'https://discord.com/invite/MfH5qN4' },
