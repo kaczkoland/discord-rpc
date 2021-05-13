@@ -3,5 +3,5 @@
 ```npm -g typescript```
 
 ```npm run build```
-### Starting
+### Start
 ```npm run start```
