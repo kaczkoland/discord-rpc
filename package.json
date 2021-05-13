@@ -1,17 +1,18 @@
 {
 	"dependencies": {
-		"discord-rpc": "github:discordjs/discord-rpc"
+		"discord-rpc": "github:discordjs/discord-rpc",
+		"axios: "^0.21.1"
 	},
 	"devDependencies": {
 		"@types/discord-rpc": "^3.0.5",
 		"@types/node": "^14.14.41"
 	},
-	"name": "papugoland-rpc",
+	"name": "kaczkoland-rpc",
 	"version": "1.0.0",
-	"description": "Rich presence for papugoland.me",
+	"description": "Rich presence for kaczkoland.pl (original by Xiboon)",
 	"main": "index.ts",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"build": "tsc --build"
 	},
 	"author": "Xiboon",
 	"license": "GPL-3.0"
